@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Grocery List</title>
+  <!-- <documentation at http://demos.jquerymobile.com/1.4.1/ > -->
+  <link href='https://fonts.googleapis.com/css?family=Nova Flat' rel='stylesheet'>
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/themes/grocerytheme.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/index.css">
+  <link rel = "stylesheet" href ="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+     <!-- Start of  page ------------------------------------------------------------------>
+  <div data-role="page" id="home" data-them='e'>
+    <!--   page header -->
+    <div data-role="header" data-theme='a'>
+      <h1>Grocery List</h1>
+      <div data-role="navbar" data-theme='e' id="nav_bar">
+        <ul>
+        <li><a href="#home" class='active-page'><i class = "fa fa-fw fa-home"></i>HOME</a></li>
+        <li><a href="#Edit"><i class = "fa fa-plus"></i>NEW</a></li>
+        <li><a href="#ListAll"><i class ="fa fa-sticky-note"></i>LIST</a></li>
+        <li><a href="javascript:alert('Please select the item from the list that you would like to view the details for, modify or delete.');"><i class = "fa fa-info-circle"></i>DETAIL</a></li>
+        </ul>
+      </div><!-- /navbar -->
+    </div>
+    <!--   page content -->
+    <div data-role="content" data-theme='a'>
+      <div class="newFont"> 
+                  <img id="image1" src="./images/grocery.jfif" alt="picture of grocery" class="Home_Slides">
+                  <img id="image2" src= "./images/dairy.jpeg" alt ="dairy" class = "Home_Slides">
+                  <img id="image3" src= "./images/household.jpeg" alt = "household" class ="Home_Slides">
+              
+                <h3>Welcome to Grocery List!</h3>
+                <p> An easy way to create a dynamic and organized grocery list!</p>
+              
+        
+      </div>
+    </div>
+
+    <!--  page footer -->
+    <div data-role="footer" data-theme='a' class="footer" >
+      <h1>Copyright 2021 Katie Pham and Mijeong Seo for PROG 209</h1>
+    </div>
+  </div>
+  <!-- End of  page ------------------------------------------------------------------>
+    <div data-role="page" id="Edit">
+        <!--  page header -->
+        <div data-role="header" data-theme='a'>
+          <h1>Add an Item</h1>
+          <div data-role="navbar" data-theme='b' id="nav_bar">
+            <ul>
+              <li><a href="#home"><i class = "fa fa-fw fa-home"></i>HOME</a></li>
+              <li><a href="#Edit"class='active-page' ><i class = "fa fa-plus"></i>NEW</a></li>
+              <li><a href="#ListAll"><i class ="fa fa-sticky-note"></i>LIST</a></li>
+              <li><a href="javascript:alert('Please select the item from the list that you would like to view the details for, modify or delete.');"><i class = "fa fa-info-circle"></i>DETAIL</a></li>
+            </ul>
+          </div><!-- /navbar -->
+         
+        </div>
+    
+    
+    
+    
+        <!-- page content -->
+      
+        <div data-role="content" data-theme='c'>
+          <div class="ui-field-contain">
+            <label for="name">Item Name:</label>
+            <input type="text" value="" id="name" placeholder="Item Name...." size="25" required maxlength = "25"/>
+          </div> 
+          <div class="ui-field-contain">
+            <label for="quantity">Quantity</label> 
+            <select name="quantity" id="quantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+            </select>
+          </div> 
+          <div class="ui-field-contain">
+            <label for="category">Select a Category</label>
+            <select name="category" id="category">
+              <option value="Household">Household</option>
+              <option value="Produce">Produce</option>
+              <option value="Frozen food">Frozen food</option>
+              <option value="Beverages">Beverages</option>
+              <option value="Dairy">Dairy</option>
+              <option value="Bakery">Bakery</option>
+              <option value="Meat">Meat</option>
+              <option value="Dry canned food">Dry canned food</option>
+              <option value="Snack">Snack</option>
+            </select>
+          </div>
+          <div class="ui-field-contain">
+            <label for="note">Note: </label> 
+            <textarea value="" id="note" placeholder="Item notes..." size="50" required maxlength= "50"></textarea>
+          </div>
+          
+        
+          <input type="button" value="Add" id="buttonAdd" data-inline="true" class="center"/>
+          <input type="button" value="Clear" id="buttonClear" data-inline="true" class="center"/>
+        </div>
+    
+
+
+        <!--   page footer -->
+        <div data-role="footer" data-theme='a'class="footer" >
+          <h1>Copyright 2021 by Katie Pham and Mijeong Seo for PROG 209</h1>
+        </div>
+      </div>
+      <!-- End of  page ------------------------------------------------------------------>
+      <div data-role="page" id="ListAll">
+        <!--   page header -->
+        <div data-role="header" data-theme='a'>
+          <h1>View the list of Grocery Item</h1>
+          <div data-role="navbar" data-theme='b' id="nav_bar">
+            <ul>
+              <li><a href="#home"><i class = "fa fa-fw fa-home"></i>HOME</a></li>
+              <li><a href="#Edit"><i class = "fa fa-plus"></i>NEW</a></li>
+              <li><a href="#ListAll" class='active-page'><i class ="fa fa-sticky-note"></i>LIST</a></li>
+              <li><a href="javascript:alert('Please select the item from the list that you would like to view the details for, modify or delete.');"><i class = "fa fa-info-circle"></i>DETAIL</a></li>
+              </ul>
+          </div><!-- /navbar -->
+        </div>
+        <!--   page content -->
+        <div data-role="content" data-theme='e'>
+          <p> Here is the list: </p>
+          <div id="divGroceryList">
+          </div>
+          <input type="button" value="Sort By Category" id="buttonSortCategory" data-inline="true" class="center"/>
+          <input type="button" value="Sort By Name" id="buttonSortName" data-inline="true" class="center"/>
+        </div>
+
+        <!--   page footer -->
+        <div data-role="footer" data-theme='a'class="footer" >
+          <h1>Copyright 2021 by Katie Pham and Mijeong Seo for PROG 209</h1>
+        </div>
+      </div>
+      </div>
+      <!-- End of  page ------------------------------------------------------------------>
+      <div data-role="page" id="ViewDetail">
+        <!--   page header -->
+        <div data-role="header" data-theme='a'>
+          <h1>View a detail info, modify or delete the selected grocery item</h1>
+          <div data-role="navbar" data-theme='b' id="nav_bar">
+            <ul>
+              <li><a href="#home" ><i class = "fa fa-fw fa-home"></i>HOME</a></li>
+              <li><a href="#Edit"><i class = "fa fa-plus"></i>NEW</a></li>
+              <li><a href="#ListAll"><i class ="fa fa-sticky-note"></i>LIST</a></li>
+              <li><a href="javascript:alert('Please select the item from the list that you would like to view the details for, modify or delete.');" class='active-page' ><i class = "fa fa-info-circle"></i>DETAIL</a></li>
+              </ul>
+          </div><!-- /navbar -->
+        </div>
+        <!--   page content -->
+        <div data-role="content" data-theme='c'>
+          <div class="ui-field-contain">
+            <label for="name" >Item Name:</label>
+            <input type="text" id="oneName" size="25" required maxlength = "25"/>
+          </div> 
+          <div class="ui-field-contain">
+            <label for="quantity">Quantity</label> 
+            <select name="quantity" id="oneQuantity">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+            </select>
+          </div> 
+          <div class="ui-field-contain">
+            <label for="category">Select a Category</label>
+            <select name="category" id="oneCategory">
+              <option value="Household">Household</option>
+              <option value="Produce" >Produce</option>
+              <option value="Frozen food">Frozen food</option>
+              <option value="Beverages">Beverages</option>
+              <option value="Dairy" >Dairy</option>
+              <option value="Bakery">Bakery</option>
+              <option value="Meat">Meat</option>
+              <option value="Dry canned food">Dry canned food</option>
+              <option value="Snack">Snack</option>
+            </select>
+          </div>
+          <div class="ui-field-contain">
+            <label for="note" >Note: </label> 
+            <textarea id="oneNote" size="50" required maxlength= "50"></textarea>
+          </div>
+          <input type="button" value="Save" id="buttonSave" data-inline="true" class="center"/>
+          <input type="button" value="Delete" id="buttonDelete" data-inline="true" class="center" style="background: rgb(216, 11, 11)"/>
+        </div>
+
+
+        <!--   page footer -->
+        <div data-role="footer" data-theme='a' class="footer">
+          <h1>Copyright 2021 by Katie Pham and Mijeong Seo for PROG 209</h1>
+        </div>
+      </div>
+      </div>
+      <!-- End of  page ------------------------------------------------------------------>      
+      <p id="IDparmHere" hidden>change1</p>  <!--hidden, a place to stash the groceryItem ID -->
+    </body>
+    <script src="/javascripts/index.js"></script>
+    </html>

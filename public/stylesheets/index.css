@@ -1,0 +1,92 @@
+
+ 
+h1 {
+  color: rgb(12, 145, 78);
+}
+
+li {
+  color: rgb(12, 145, 78);
+  font-size:      25px;
+  font-weight:    bold;
+}
+
+.myHeader {
+  text-align: center;
+  font-size:      30px;
+  font-weight:    bold;
+  color:  rgb(106, 221, 163);
+}
+
+.footer {
+  background-image:url("./images/grocery_footer1.png");
+
+}
+
+.newFont {
+  text-align: right;
+  font-family: 'Nova Flat';font-size: 16px;
+  font-size:      25px;
+  font-weight:    bold;
+  color:  rgb(24, 211, 117);
+}
+
+#divGroceryList ul li a {
+  color: rgb(12, 145, 78);
+  font-size:      25px;
+
+}
+
+input[type=button] {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+ }
+
+ .button:hover {background-color:  #3e8e41}
+
+ .button:active{
+   background-color: #3e8341;
+   box-shadow: 0 5px #666;
+   transform: translateY(4px);
+ }
+.center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.image1 {
+  width: 100%;
+}
+.image2 {
+  width: 100%;
+}
+
+.image3 {
+  width: 100%;
+}
+
+#nav_bar ul li a.active-page
+{
+  background-color:rgb(106, 221, 163);
+}
+© 2021 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Docs
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
