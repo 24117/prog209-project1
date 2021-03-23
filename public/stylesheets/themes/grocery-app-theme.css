@@ -250,8 +250,8 @@ html .ui-bar-a .ui-body-inherit,
 html .ui-body-a .ui-body-inherit,
 html body .ui-group-theme-a .ui-body-inherit,
 html .ui-panel-page-container-a {
-	background-color: #9af7c5 /*{a-body-background-color}*/;
-	border-color: #54876c /*{a-body-border}*/;
+	background-color: #9de7e7 /*{a-body-background-color}*/;
+	border-color: #567f7f /*{a-body-border}*/;
 	color: #000000 /*{a-body-color}*/;
 	text-shadow: 0 /*{a-body-shadow-x}*/ 1px /*{a-body-shadow-y}*/ 0 /*{a-body-shadow-radius}*/ #eeeeee /*{a-body-shadow-color}*/;
 }
@@ -297,8 +297,8 @@ html .ui-bar-a .ui-btn:visited,
 html .ui-body-a .ui-btn:visited,
 html body .ui-group-theme-a .ui-btn:visited,
 html head + body .ui-btn.ui-btn-a:visited {
-	background-color: #aff9f4 /*{a-bup-background-color}*/;
-	border-color: #608886 /*{a-bup-border}*/;
+	background-color: #c9e4a5 /*{a-bup-background-color}*/;
+	border-color: #6e7d5a /*{a-bup-border}*/;
 	color: #000000 /*{a-bup-color}*/;
 	text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #eeeeee /*{a-bup-shadow-color}*/;
 }
@@ -308,8 +308,8 @@ html .ui-bar-a .ui-btn:hover,
 html .ui-body-a .ui-btn:hover,
 html body .ui-group-theme-a .ui-btn:hover,
 html head + body .ui-btn.ui-btn-a:hover {
-	background-color: #c9FFFF /*{a-bhover-background-color}*/;
-	border-color: #6e8c8c /*{a-bhover-border}*/;
+	background-color: #e7FFbd /*{a-bhover-background-color}*/;
+	border-color: #7f8c67 /*{a-bhover-border}*/;
 	color: #000000 /*{a-bhover-color}*/;
 	text-shadow: 0 /*{a-bhover-shadow-x}*/ 1px /*{a-bhover-shadow-y}*/ 0 /*{a-bhover-shadow-radius}*/ #eeeeee /*{a-bhover-shadow-color}*/;
 }
@@ -319,8 +319,8 @@ html .ui-bar-a .ui-btn:active,
 html .ui-body-a .ui-btn:active,
 html body .ui-group-theme-a .ui-btn:active,
 html head + body .ui-btn.ui-btn-a:active {
-	background-color: #c9FFFF /*{a-bdown-background-color}*/;
-	border-color: #6e8c8c /*{a-bdown-border}*/;
+	background-color: #e7FFbd /*{a-bdown-background-color}*/;
+	border-color: #7f8c67 /*{a-bdown-border}*/;
 	color: #000000 /*{a-bdown-color}*/;
 	text-shadow: 0 /*{a-bdown-shadow-x}*/ 1px /*{a-bdown-shadow-y}*/ 0 /*{a-bdown-shadow-radius}*/ #eeeeee /*{a-bdown-shadow-color}*/;
 }
