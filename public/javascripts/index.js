@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     document.getElementById("buttonSave").addEventListener("click", function () {
-        modifyGroceryItem(document.getElementById("IDparmHere").innerHTML);
+        saveGroceryItem(document.getElementById("IDparmHere").innerHTML);
         createList();  // recreate li list after removing one
         document.location.href = "index.html#ListAll";  // go back to movie list 
     });
@@ -193,7 +193,7 @@ function createList() {
 
 
 
-function modifyGroceryItem(which) {
+function saveGroceryItem(which) {
     // console.log(which);
     // let arrayPointer = GetArrayPointer(which);
     // groceryItemArray[arrayPointer].Name = document.getElementById("oneName").value;
@@ -299,9 +299,9 @@ function addNewGroceryItem(newGroceryItem){
         // a put requires both a URL passed value and an object in the body
         // that way you could tell the server, find the object with this ID  passed in the URL
         // and replace it with an object that is in the body that MIGHT have an updated and different ID.
-        const request = new Request('/modifyGroceryItem/' + newMovie.ID, {
+        const request = new Request('/modifyGroceryItem/' + newGroceryItem.ID, {
             method: 'PUT',
-            body: JSON.stringify(newMovie),
+            body: JSON.stringify(newGroceryItem),
             headers: new Headers({
                 'Content-Type': 'application/json'
             })
